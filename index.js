@@ -1,3 +1,10 @@
+const Monster = require('./src/Monster');
+const Hero = require('./src/Hero');
+const Arena = require('./src/Arena');
+const Weapon = require('./src/Weapon');
+const Shield = require('./src/Shield'); 
+
+
 /** Part for the starting instanciation */
 /** creating the hero Heracles */
 const heracles = new Fighter('👨 Heracles', 20, 6, './images/heracles.svg');
@@ -20,8 +27,9 @@ const fighterHtml = new FightersTemplate('fighters');
 fighterHtml.createTemplate(heracles, bird1);
 
 /** Your code goes here */
-
-
+const arena = new Arena(10, [bird1, bird2, bird3], heracles)
+const ArenaHTML = new ArenaTemplate('arena');
+ArenaHTML.ccreateArena(arena);
 
 /** Do not touch => allow the opening / closing of the hero information section */
 let openingModal = true;
