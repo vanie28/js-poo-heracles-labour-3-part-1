@@ -1,0 +1,12 @@
+class Hero extends Fighter {
+    constructor(name, strength, dexterity, image, x, y) {
+      this.name = name;
+      this.strength = strength;
+      this.dexterity = dexterity;
+      this.image = image;
+      this.weapon = null;
+      this.shield = null;
+      this.x = x;
+      this.y = y;
+    }
+}
